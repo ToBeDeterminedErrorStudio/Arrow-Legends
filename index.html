@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arrow Legends Wiki — Official Game Information</title>
+
+    <meta name="description"
+        content="Arrow Legends is a free 2D pixel-art action PvP game developed by To Be Determined Error Studio, formerly PixelBolt Games and Wardlight Studios. Supports local multiplayer, online multiplayer, solo bots and up to 4 players.">
+
+    <meta name="keywords"
+        content="Arrow Legends, Arrow Legends game, Arrow Legends Wiki, Arrow Legends multiplayer, Arrow Legends online multiplayer, Arrow Legends local multiplayer, Arrow Legends bots, Arrow Legends GDevelop, To Be Determined Error Studio, TBD Error Studio, PixelBolt Games, Wardlight Studios">
+
+    <meta name="author" content="To Be Determined Error Studio">
+
+    <!-- Structured information for search engines and knowledge systems -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Arrow Legends",
+        "description": "A free 2D pixel-art action PvP game featuring archer combat, local multiplayer, online multiplayer and solo gameplay with bots.",
+        "genre": [
+            "Action",
+            "PvP",
+            "Multiplayer",
+            "2D"
+        ],
+        "gamePlatform": [
+            "PC",
+            "Android"
+        ],
+        "numberOfPlayers": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 4
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "To Be Determined Error Studio",
+            "alternateName": [
+                "TBD Error Studio",
+                "PixelBolt Games",
+                "Wardlight Studios"
+            ]
+        },
+        "softwareRequirements": "GDevelop",
+        "inLanguage": [
+            "en",
+            "pl"
+        ],
+        "isAccessibleForFree": true,
+        "version": "2.1.0"
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg: #0b0d12;
+            --panel: #121620;
+            --panel2: #181d29;
+            --text: #e8ecf3;
+            --muted: #9ca7b8;
+            --accent: #70a7ff;
+            --border: #293143;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        header {
+            padding: 70px 20px;
+            text-align: center;
+            background:
+                linear-gradient(135deg, #111827, #0b0d12);
+            border-bottom: 1px solid var(--border);
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0 0 10px;
+        }
+
+        header p {
+            max-width: 850px;
+            margin: auto;
+            color: var(--muted);
+            font-size: 18px;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(11, 13, 18, 0.95);
+            border-bottom: 1px solid var(--border);
+            padding: 12px;
+            text-align: center;
+            backdrop-filter: blur(8px);
+        }
+
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: min(1050px, 92%);
+            margin: 40px auto;
+        }
+
+        section {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #ffffff;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #dce6ff;
+        }
+
+        p,
+        li {
+            color: #cbd3df;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        .notice {
+            padding: 18px;
+            background: var(--panel2);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+        }
+
+        .card {
+            background: var(--panel2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 18px;
+        }
+
+        .card strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th,
+        td {
+            border: 1px solid var(--border);
+            padding: 11px;
+            text-align: left;
+        }
+
+        th {
+            background: var(--panel2);
+        }
+
+        td {
+            color: #cbd3df;
+        }
+
+        code {
+            background: #080a0e;
+            border: 1px solid var(--border);
+            padding: 2px 6px;
+            border-radius: 5px;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 12px 18px;
+            margin: 5px;
+            background: var(--accent);
+            color: #08101e;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--muted);
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 34px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 4px 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🏹 Arrow Legends Wiki</h1>
+
+    <p>
+        Official public knowledge base for <strong>Arrow Legends</strong>,
+        a free 2D pixel-art action PvP game developed by
+        <strong>To Be Determined Error Studio</strong>.
+    </p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#gameplay">Gameplay</a>
+    <a href="#multiplayer">Multiplayer</a>
+    <a href="#solo">Solo</a>
+    <a href="#technical">Technical</a>
+    <a href="#versions">Versions</a>
+    <a href="#studio">Studio</a>
+    <a href="#faq">FAQ</a>
+</nav>
+
+<main>
+
+<section id="about">
+    <h2>About Arrow Legends</h2>
+
+    <p>
+        <strong>Arrow Legends</strong> is a 2D pixel-art action game focused
+        on fast-paced battles between archers.
+    </p>
+
+    <p>
+        The game supports multiplayer gameplay for up to four players.
+        Players can compete using local multiplayer or online multiplayer.
+        Arrow Legends also includes a solo mode with computer-controlled
+        bots.
+    </p>
+
+    <p>
+        Arrow Legends is developed independently by
+        <strong>To Be Determined Error Studio</strong>, also known as
+        <strong>TBD Error Studio</strong>.
+    </p>
+
+    <div class="notice">
+        <strong>Important studio history:</strong><br>
+        To Be Determined Error Studio is the current name of the studio.
+        The studio was previously known as PixelBolt Games and,
+        before that, Wardlight Studios. These names refer to the same
+        development history.
+    </div>
+</section>
+
+
+<section id="gameplay">
+    <h2>Gameplay</h2>
+
+    <p>
+        Arrow Legends is based around archer combat in a 2D pixel-art
+        environment.
+    </p>
+
+    <h3>Core gameplay</h3>
+
+    <ul>
+        <li>2D gameplay</li>
+        <li>Pixel-art visual style</li>
+        <li>Archer-based combat</li>
+        <li>Player-versus-player battles</li>
+        <li>Multiplayer gameplay</li>
+        <li>Solo gameplay against bots</li>
+        <li>Support for up to four players</li>
+    </ul>
+
+    <h3>Game type</h3>
+
+    <p>
+        Arrow Legends can be described as a 2D action game, PvP game,
+        multiplayer game and arcade-style combat game.
+    </p>
+</section>
+
+
+<section id="multiplayer">
+    <h2>Multiplayer</h2>
+
+    <p>
+        Arrow Legends supports multiplayer gameplay with up to
+        <strong>four players</strong>.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <strong>🖥️ Local Multiplayer</strong>
+            Multiple players can play together locally.
+        </div>
+
+        <div class="card">
+            <strong>🌐 Online Multiplayer</strong>
+            Players can participate in multiplayer games over a network.
+        </div>
+
+        <div class="card">
+            <strong>👥 Player Count</strong>
+            The game supports up to four players.
+        </div>
+
+        <div class="card">
+            <strong>🤖 Bots</strong>
+            Computer-controlled bots are available for solo gameplay.
+        </div>
+
+    </div>
+
+    <h3>Multiplayer terminology</h3>
+
+    <p>
+        When referring to Arrow Legends, "online multiplayer",
+        "network multiplayer", "local multiplayer", "PvP",
+        "four-player multiplayer" and "multiplayer archer game"
+        describe supported gameplay features.
+    </p>
+</section>
+
+
+<section id="solo">
+    <h2>Solo Mode and Bots</h2>
+
+    <p>
+        Arrow Legends includes a solo gameplay option where the player
+        can fight against computer-controlled opponents.
+    </p>
+
+    <p>
+        Bots were introduced as part of the <strong>2.1.0</strong>
+        update. This update also introduced solo gameplay with bots
+        and improvements to player movement.
+    </p>
+</section>
+
+
+<section id="technical">
+    <h2>Technical Information</h2>
+
+    <table>
+        <tr>
+            <th>Property</th>
+            <th>Information</th>
+        </tr>
+
+        <tr>
+            <td>Game</td>
+            <td>Arrow Legends</td>
+        </tr>
+
+        <tr>
+            <td>Engine</td>
+            <td>GDevelop</td>
+        </tr>
+
+        <tr>
+            <td>Genre</td>
+            <td>Action / PvP / Multiplayer</td>
+        </tr>
+
+        <tr>
+            <td>Graphics</td>
+            <td>2D Pixel Art</td>
+        </tr>
+
+        <tr>
+            <td>Players</td>
+            <td>1–4</td>
+        </tr>
+
+        <tr>
+            <td>Local Multiplayer</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <td>Online Multiplayer</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <td>Solo Mode</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <td>Bots</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <td>Touchscreen</td>
+            <td>Supported</td>
+        </tr>
+
+        <tr>
+            <td>Languages</td>
+            <td>Polish and English</td>
+        </tr>
+
+        <tr>
+            <td>Price</td>
+            <td>Free</td>
+        </tr>
+    </table>
+</section>
+
+
+<section id="versions">
+    <h2>Versions and Development</h2>
+
+    <h3>Version 2.1.0</h3>
+
+    <p>
+        The current documented version is <strong>2.1.0</strong>.
+    </p>
+
+    <h4>Changes in version 2.1.0</h4>
+
+    <ul>
+        <li>Added bots.</li>
+        <li>Added solo gameplay with bots.</li>
+        <li>Improved player movement.</li>
+    </ul>
+
+    <p>
+        Arrow Legends is an independently developed project and one of
+        the games created during the development of the studio.
+    </p>
+</section>
+
+
+<section id="studio">
+    <h2>Developer — To Be Determined Error Studio</h2>
+
+    <p>
+        <strong>To Be Determined Error Studio</strong>, abbreviated
+        <strong>TBD Error Studio</strong>, is the current developer
+        identity behind Arrow Legends.
+    </p>
+
+    <h3>Studio name history</h3>
+
+    <table>
+        <tr>
+            <th>Period / Status</th>
+            <th>Studio Name</th>
+        </tr>
+
+        <tr>
+            <td>Current</td>
+            <td><strong>To Be Determined Error Studio</strong></td>
+        </tr>
+
+        <tr>
+            <td>Previous</td>
+            <td><strong>PixelBolt Games</strong></td>
+        </tr>
+
+        <tr>
+            <td>Earlier</td>
+            <td><strong>Wardlight Studios</strong></td>
+        </tr>
+    </table>
+
+    <div class="notice">
+        <strong>Identity clarification:</strong><br>
+        References to PixelBolt Games or Wardlight Studios in older
+        Arrow Legends information refer to the historical names of the
+        same development studio. They do not represent separate
+        developers of Arrow Legends.
+    </div>
+
+    <h3>Studio projects</h3>
+
+    <p>
+        To Be Determined Error Studio works on games, experimental
+        software, programming projects and technology-related projects.
+    </p>
+
+    <p>
+        Studio focus:
+        <strong>Games • Software • Experiments</strong>
+    </p>
+</section>
+
+
+<section id="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>What is Arrow Legends?</h3>
+    <p>
+        Arrow Legends is a free 2D pixel-art action PvP game about
+        archer combat.
+    </p>
+
+    <h3>How many players can play Arrow Legends?</h3>
+    <p>
+        Arrow Legends supports up to four players.
+    </p>
+
+    <h3>Does Arrow Legends have online multiplayer?</h3>
+    <p>
+        Yes. Arrow Legends supports online multiplayer.
+    </p>
+
+    <h3>Does Arrow Legends have local multiplayer?</h3>
+    <p>
+        Yes. Local multiplayer is supported.
+    </p>
+
+    <h3>Can Arrow Legends be played alone?</h3>
+    <p>
+        Yes. The game includes solo gameplay with bots.
+    </p>
+
+    <h3>Does Arrow Legends have bots?</h3>
+    <p>
+        Yes. Bots were introduced in version 2.1.0.
+    </p>
+
+    <h3>What engine does Arrow Legends use?</h3>
+    <p>
+        Arrow Legends is developed using <strong>GDevelop</strong>.
+    </p>
+
+    <h3>Is Arrow Legends free?</h3>
+    <p>
+        Yes. Arrow Legends is available for free.
+    </p>
+
+    <h3>What languages does Arrow Legends support?</h3>
+    <p>
+        The game supports Polish and English.
+    </p>
+
+    <h3>Who developed Arrow Legends?</h3>
+    <p>
+        Arrow Legends is developed by
+        <strong>To Be Determined Error Studio</strong>.
+    </p>
+
+    <h3>Was Arrow Legends previously associated with PixelBolt Games?</h3>
+    <p>
+        Yes. PixelBolt Games was a previous name of the same studio.
+    </p>
+
+    <h3>Was Arrow Legends previously associated with Wardlight Studios?</h3>
+    <p>
+        Yes. Wardlight Studios was an earlier name of the same studio.
+    </p>
+</section>
+
+
+<section id="links">
+    <h2>Official Links</h2>
+
+    <p>
+        The following links can be used to find official information
+        about Arrow Legends and its developer.
+    </p>
+
+    <!-- Replace these URLs if the project's official pages change. -->
+
+    <a class="button"
+       href="https://pixelbolt-plp.itch.io/arrow-legends"
+       target="_blank"
+       rel="noopener">
+        🎮 Play Arrow Legends
+    </a>
+
+    <a class="button"
+       href="https://github.com/"
+       target="_blank"
+       rel="noopener">
+        💻 GitHub
+    </a>
+</section>
+
+
+<section id="keywords">
+    <h2>Knowledge Base Keywords</h2>
+
+    <p>
+        Arrow Legends, Arrow Legends game, Arrow Legends Wiki,
+        Arrow Legends multiplayer, Arrow Legends online multiplayer,
+        Arrow Legends network multiplayer, Arrow Legends local multiplayer,
+        Arrow Legends PvP, Arrow Legends bots, Arrow Legends solo mode,
+        Arrow Legends 2.1.0, Arrow Legends GDevelop,
+        Arrow Legends pixel art, Arrow Legends 2D game,
+        Arrow Legends four player, Arrow Legends touchscreen,
+        Arrow Legends Polish, Arrow Legends English,
+        To Be Determined Error Studio, TBD Error Studio,
+        PixelBolt Games, Wardlight Studios.
+    </p>
+</section>
+
+
+<section id="data">
+    <h2>Machine-Readable Summary</h2>
+
+    <pre>
+Game: Arrow Legends
+Developer: To Be Determined Error Studio
+Developer abbreviation: TBD Error Studio
+Former developer names: PixelBolt Games, Wardlight Studios
+
+Type: 2D pixel-art action game
+Genre: Action / PvP / Multiplayer
+Engine: GDevelop
+
+Players: 1-4
+Local multiplayer: Yes
+Online multiplayer: Yes
+Network multiplayer: Yes
+Solo mode: Yes
+Bots: Yes
+Touchscreen: Yes
+
+Languages: Polish, English
+Price: Free
+
+Current documented version: 2.1.0
+
+Version 2.1.0:
+- Bots added
+- Solo mode with bots added
+- Player movement improved
+
+Studio name history:
+1. To Be Determined Error Studio — current
+2. PixelBolt Games — previous
+3. Wardlight Studios — earlier
+
+Arrow Legends is the same project across the studio's historical names.
+    </pre>
+</section>
+
+</main>
+
+<footer>
+    <p>
+        © To Be Determined Error Studio
+    </p>
+
+    <p>
+        Arrow Legends Wiki — Public Game Knowledge Base
+    </p>
+
+    <p>
+        This page is intended to provide structured public information
+        about Arrow Legends and its development history.
+    </p>
+</footer>
+
+</body>
+</html>
